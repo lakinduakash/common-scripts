@@ -6,6 +6,9 @@ sed -i '/ZSH_THEME=/c ZSH_THEME="crunch"' .zshrc
 sudo usermod --shell $(which zsh) ${USER}
 ```
 
+Extra theme
+`sed -i '/ZSH_THEME=/c ZSH_THEME="geoffgarside"' .zshrc`
+
 
 ## Install docker
 
