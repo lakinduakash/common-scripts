@@ -72,3 +72,16 @@ server {
 Deattach from seesion -> `Ctrl + b d`
 
 Attach session 0 -> `tmux attach-session -t 0`
+
+## sql
+
+Mysql import sql file into database
+```
+mysql -u <dbuser> -p <database> --init-command="SET SESSION FOREIGN_KEY_CHECKS=0;" < <filename.sql>
+```
+
+Mysql export db
+
+```
+mysqldump -u <dbuser> -p <database> > filename-$(date +'%Y%m%d_%H%M%S').sql
+```
